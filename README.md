@@ -1,2 +1,2 @@
 # guesswho
-simple web game v1
+simple web game v2
