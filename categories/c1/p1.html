@@ -59,13 +59,32 @@
 
             .back {
                 text-decoration-line: none;
-                margin: 20px;
-                padding: 10px;
                 font-weight: bold;
                 color: #97a6e8;
+                font-size: 30px;
+                padding: 5px;
+                cursor: pointer;
+                position: absolute;
+                top: 700px;
+                left: 622px;
             }
 
             .back:hover {
+                color: #ffffff;
+                background-color: #97a6e8;
+            }
+
+            .hint {
+                color: #97a6e8;
+                font-size: 30px;
+                padding: 5px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: #ffffff;
+            }
+
+            .hint:hover {
                 color: #ffffff;
                 background-color: #97a6e8;
             }
@@ -84,13 +103,28 @@
 
         <h2 class="name">Solid Snake (Metal Gear Solid)</h2>
 
-        <a href="https://www.google.com/" target="_blank" class="help">Need Help?</a>
-        <a href="/guesswho/select.html" class="back">Back</a>
+        <center><button type="button" id="hintlog" class="hint">
+            Hint
+        </button></center>
+
+        <a href="/guesswho/index.html" class="back">Back to Menu</a>
+
+        <a href="/guesswho/random_c1.html" class="image-link">
+            <img src="redo.png">
+        </a>
+
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- <script src="script.js"></script> -->
         <script>
             // JS
+
+            const button = document.getElementById('hintlog');
+                button.addEventListener('click', () => {
+                document.getElementById("hintlog").innerHTML = "";
+                });
 
 
         </script>
