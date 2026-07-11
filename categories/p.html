@@ -87,6 +87,17 @@
                 left: 1330px;
             }
 
+            .if {
+                width: 80px;
+                height: 80px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                top: 100px;
+                left: 15px;
+            }
+
 
         </style>
 
@@ -111,6 +122,10 @@
             <img src="/guesswho/images/redo.png" class="ik">
         </a>
 
+        <a id="ff">
+            <img src="/images/forefeit.png" class="if">
+        </a>
+
 
 
 
@@ -121,7 +136,12 @@
 
             const button = document.getElementById('hintlog');
                 button.addEventListener('click', () => {
-                document.getElementById("hintlog").innerHTML = "";
+                document.getElementById("hintlog").innerHTML = "text";
+                });
+
+            const button = document.getElementById('ff');
+                button.addEventListener('click', () => {
+                document.getElementById("").innerHTML = "";
                 });
 
 
