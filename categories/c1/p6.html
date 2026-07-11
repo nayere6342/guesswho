@@ -100,6 +100,27 @@
                 left: 1330px;
             }
 
+            .if {
+                width: 80px;
+                height: 80px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                cursor: pointer;
+                top: 100px;
+                left: 15px;
+            }
+
+            .hid {
+                font-family: "Lucida Console", "Courier New", monospace;
+                position: absolute;
+                font-weight: bold;
+                top: 580px;
+                left: 300px;
+                color: #f06969;
+                font-size: 80px;
+            }
 
         </style>
 
@@ -124,6 +145,12 @@
             <img src="/guesswho/images/redo.png" class="ik">
         </a>
 
+                    <a type="finish" id="ff">
+            <img src="/images/forefeit.png" class="if">
+        </a>
+
+        <p id="mesg" class="hid"></p>
+
 
 
 
@@ -136,6 +163,16 @@
                 button.addEventListener('click', () => {
                 document.getElementById("hintlog").innerHTML = "This character is a human turn machine, after they merge with the tech they grow a following. This character's first time seen was in 2011 this game is a MOBA.";
                 });
+
+                        const finish = document.getElementById('ff');
+                finish.addEventListener('click', () => {
+                document.getElementById("hintlog").innerHTML = "";
+                document.getElementById("mesg").innerHTML = "You Have Forefeit!";
+                document.querySelector(".ik").remove();
+                document.querySelector(".if").remove();
+                });
+
+
 
 
 
