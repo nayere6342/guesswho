@@ -100,6 +100,28 @@
                 left: 1330px;
             }
 
+            .if {
+                width: 80px;
+                height: 80px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                cursor: pointer;
+                top: 100px;
+                left: 15px;
+            }
+
+            .hid {
+                font-family: "Lucida Console", "Courier New", monospace;
+                position: absolute;
+                font-weight: bold;
+                top: 580px;
+                left: 300px;
+                color: #f06969;
+                font-size: 80px;
+            }
+
 
         </style>
 
@@ -124,7 +146,11 @@
             <img src="/guesswho/images/redo.png" class="ik">
         </a>
 
+            <a type="finish" id="ff">
+            <img src="/images/forefeit.png" class="if">
+        </a>
 
+        <p id="mesg" class="hid"></p>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -136,6 +162,17 @@
                 button.addEventListener('click', () => {
                 document.getElementById("hintlog").innerHTML = "This character's first game was in 1998 and is a story-based game. This character is known for not speaking during the game. Adding on, a 3rd game was in the works until it got canceled.";
                 });
+
+            const finish = document.getElementById('ff');
+                finish.addEventListener('click', () => {
+                document.getElementById("hintlog").innerHTML = "";
+                document.getElementById("mesg").innerHTML = "You Have Forefeit!";
+                document.querySelector(".ik").remove();
+                document.querySelector(".if").remove();
+                });
+
+
+
 
 
 
