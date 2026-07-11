@@ -124,6 +124,22 @@
                 document.getElementById("hintlog").innerHTML = "Once an actor turned music artist this artist is known for their pop songs. Releasing a feature with Justin Bieber in 2020";
                 });
 
+                        const finish = document.getElementById('ff');
+                finish.addEventListener('click', () => {
+                document.getElementById("hintlog").innerHTML = "";
+                document.getElementById("mesg").innerHTML = "You Have Forefeit!";
+                document.querySelector(".ik").remove();
+                document.querySelector(".if").remove();
+                });
+
+            
+
+            <a type="finish" id="ff">
+            <img src="/images/forefeit.png" class="if">
+        </a>
+
+        <p id="mesg" class="hid"></p>
+
 
         </script>
     </body>
