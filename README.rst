@@ -1,6 +1,6 @@
 |title|
 
- |gfi| |h5| |gw| |bsp| 
+ |gfi| |bsp| |gw| |h5|  
 
 This is a simple and open source web game where the goal is to correctly guess who is on the card of the other player.
 
@@ -46,14 +46,14 @@ When adding an image it is important to keep the file path the same. To do so, d
    :height: 40px
    :target: #
 
-.. |bsp| image:: https://nayere6342.github.io//guesswho/images/subimages/gfi.png
-   :width: 250px
-   :height: 50px
-   :target: #
-
-.. |gfi| image:: https://nayere6342.github.io//guesswho/images/subimages/bsp_v_true.png
+.. |bsp| image:: https://nayere6342.github.io//guesswho/images/subimages/bsp_v_true.png
    :width: 250px
    :height: 40px
+   :target: #
+
+.. |gfi| image:: https://nayere6342.github.io//guesswho/images/subimages/gfi.png
+   :width: 250px
+   :height: 35px
    :target: #
 
 .. |h5| image:: https://nayere6342.github.io//guesswho/images/subimages/html_v.png
