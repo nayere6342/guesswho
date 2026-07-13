@@ -9,12 +9,12 @@ This is a simple and open source web game where the goal is to correctly guess w
 
 When a player clicks on a category it first brings them to another file called `random_c0.html` depending on the category the player is in. It will redirect the player to a random card with a random identifier.
 
-Installation:
+🎛️ Installation:
 ---------------------
 
-Make a fork of the repo. This allows you to make a copy of the project. By doing this, you're able to change how the project works and looks.
+Make a fork of the repo. This allows you to make a copy of the project. By doing this, you're able to change how the project works and looks. You are able to change the name and the description.
 
-⌬ How To Customize The Game:
+🔧 How To Customize The Game:
 ---------------------
 
 Great! Now yuo're able to change this project how you want. If you would like to add a new category. First thing to do is to copy the category template folder by using the command below:
@@ -43,4 +43,4 @@ Moving on, when adding an image it is important to keep the file path the same. 
 
 .. |gw| image:: https://nayere6342.github.io//guesswho/images/subimages/gw_true.png :scale: 20%
 
-.. |title| image:: https://nayere6342.github.io//guesswho/images/subimages/titlegear.png
+.. |title| image:: https://nayere6342.github.io//guesswho/images/subimages/titlegear.png  :target: https://nayere6342.github.io/guesswho/ :scale: 20%
