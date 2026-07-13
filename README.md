@@ -3,6 +3,6 @@
 
 ### This is a simple web game where the goal is to correctly guess who is on the card of the other player.
 
-## This is how the game works:
+## How the Game Works:
 
-### When a player clicks on a category it first brings them to another 
+### When a player clicks on a category it first brings them to another file called `random_c0.html` depending on the category the player is in. It will randomly redirect the player to a 
