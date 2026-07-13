@@ -1,2 +1,3 @@
 # Top's Guess Who?
-This is a simple web game. 
+> [!NOTE]
+This is a simple web game .
