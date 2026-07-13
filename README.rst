@@ -1,6 +1,6 @@
 |title|
 
-|gw|
+ |gw| |h5| |bsp|
 
 This is a simple and open source web game where the goal is to correctly guess who is on the card of the other player.
 
@@ -36,14 +36,25 @@ If you see this, Congrets! You're in the right place. All that is needed to chan
 
 Now if you also changed the file name just keep the ending the same so if it's `p1.html` it can be `john.html`
 
-Moving on, when adding an image it is important to keep the file path the same. To do so, drag and drop an image you want into the images folder. After link the image name to the file so if it's `johndoe.jpg` in the file path it would be: `src="/guesswho/images/johndoe.jpg"`. Important detail: The image will not load if it is in the wrong format. If you added the image as `johndoe.png` and linked it with `johndoe.jpg` it will not load. Here is a link if you need help with image formats `Image Formats`_
+When adding an image it is important to keep the file path the same. To do so, drag and drop an image you want into the images folder. After link the image name to the file so if it's `johndoe.jpg` in the file path it would be: `src="/guesswho/images/johndoe.jpg"`. Important detail: The image will not load if it is in the wrong format. If you added the image as `johndoe.png` and linked it with `johndoe.jpg` it will not load. Here is a link if you need help with image formats `Image Formats`_
 
 
 .. _Image Formats: https://www.pygame.org/contribute.html
 
 .. |gw| image:: https://nayere6342.github.io//guesswho/images/subimages/gw_true.png
-   :width: 50px
-   :height: 20px
+   :width: 200px
+   :height: 50px
+
+.. |bsp| image:: https://nayere6342.github.io//guesswho/images/subimages/bsp_v_true.png
+   :width: 250px
+   :height: 50px
+
+.. |h5| image:: https://nayere6342.github.io//guesswho/images/subimages/html_v.png
+   :width: 200px
+   :height: 50px
 
 .. |title| image:: https://nayere6342.github.io//guesswho/images/subimages/titlegear.png
     :target: https://nayere6342.github.io/guesswho/
+    :width: 450px
+    :height: 400px
+
