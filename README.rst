@@ -44,5 +44,6 @@ Moving on, when adding an image it is important to keep the file path the same. 
 .. |gw| image:: https://nayere6342.github.io//guesswho/images/subimages/gw_true.png
     :scale: 20%
 
-.. |title| image:: https://nayere6342.github.io//guesswho/images/subimages/titlegear.png  :target: https://nayere6342.github.io/guesswho/
+.. |title| image:: https://nayere6342.github.io//guesswho/images/subimages/titlegear.png
+    :target: https://nayere6342.github.io/guesswho/
     :scale: 50%
