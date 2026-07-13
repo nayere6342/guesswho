@@ -5,4 +5,4 @@
 
 ## How the Game Works:
 
-### When a player clicks on a category it first brings them to another file called `random_c0.html` depending on the category the player is in. It will randomly redirect the player to a 
+### When a player clicks on a category it first brings them to another file called `random_c0.html` depending on the category the player is in. It will redirect the player to a random card with a random identifier.
