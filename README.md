@@ -1,2 +1,2 @@
-#
-simple web game v1
+# Top's Guess Who?
+This is a simple web game.
