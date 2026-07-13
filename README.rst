@@ -19,11 +19,15 @@ Make a fork of the repo. This allows you to make a copy of the project. By doing
 
 Great! Now yuo're able to change this project how you want. If you would like to add a new category. First thing to do is to copy the category template folder by using the command below:
 
+.. code-block:: bash
+
     cp -r ctemplate cX
 
 Then, once it has been copied over, open the file inside. Here you're see: Category title, identifier image, and redo button. The all the redo button does is it gives the player a new identifier. To make sure that the identifier is in the right category. Once you make a new category link it to the redo button in the right category. For example if the category is labeled: `/c9/` then the randomizer should be labeled with the same number. Here is how to do it:
 
 Get out of category you've made and copy `random_cX.html` into the `/randomlogic/` folder. Just replace X with the number or word you want and open the file you just copied. Once open no need to change anything but the file path:
+
+.. code-block:: javascript
 
             const files = [
                 "../categories/cX/p1.html",
