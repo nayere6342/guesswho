@@ -11,6 +11,6 @@
 
 ### First:
 
-Make a fork of the repo. This allows you to make a copy of the project. By doing this, 
+Make a fork of the repo. This allows you to make a copy of the project. By doing this, you're able to change how the proj
 
 
