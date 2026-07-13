@@ -44,14 +44,17 @@ When adding an image it is important to keep the file path the same. To do so, d
 .. |gw| image:: https://nayere6342.github.io//guesswho/images/subimages/gw_true.png
    :width: 200px
    :height: 50px
+   :target: #
 
 .. |bsp| image:: https://nayere6342.github.io//guesswho/images/subimages/bsp_v_true.png
    :width: 250px
    :height: 50px
+   :target: #
 
 .. |h5| image:: https://nayere6342.github.io//guesswho/images/subimages/html_v.png
    :width: 200px
    :height: 50px
+   :target: #
 
 .. |title| image:: https://nayere6342.github.io//guesswho/images/subimages/titlegear.png
     :target: https://nayere6342.github.io/guesswho/
