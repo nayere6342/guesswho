@@ -2,14 +2,14 @@ import { pscore } from "./tracker.js";
 
             const add = document.getElementById('add');
                 add.addEventListener('click', () => {
-                const po = document.createElement("a");
-                po.className = "sc";
-                po.innerHTML = "0";
-                card.appendChild(po);
                 const card = document.createElement("p");
                 card.className = "pcard";
                 card.innerHTML = "";
                 document.getElementById("cards").appendChild(card);
+                const po = document.createElement("p");
+                po.className = "sc";
+                po.innerHTML = "0";
+                card.appendChild(po);
                 const tb = document.createElement("input");
                 tb.className = "txt";
                 card.appendChild(tb);
@@ -23,6 +23,11 @@ import { pscore } from "./tracker.js";
                 card.appendChild(bm2);
                 const player = new pscore();
                 console.log("working!");
+        });
+
+            const tr = document.getElementById('tr');
+                tr.addEventListener('click', () => {
+                    
         });
 
 
