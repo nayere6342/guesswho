@@ -193,6 +193,11 @@
         <script>
             // JS
             import { pscore } from "./tracker.js";
+
+            const button = document.getElementById('hintlog');
+                button.addEventListener('click', () => {
+                document.getElementById("hintlog").innerHTML = "This is a hint!";
+        });
             const player = new PScore();
 
 
