@@ -5,7 +5,7 @@ import { pscore } from "./tracker.js";
                 const card = document.createElement("p");
                 card.className = "pcard";
                 card.innerHTML = "name";
-                document.body.appendChild(card);
+                document.getElementById("cards").appendChild(card);
                 const bm = document.createElement("button");
                 bm.className = "cba";
                 bm.innerHTML = "+";
