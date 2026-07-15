@@ -1,3 +1,3 @@
-class {
-    
+class pscore {
+    String 
 }
