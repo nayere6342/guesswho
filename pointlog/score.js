@@ -20,3 +20,6 @@ import { pscore } from "./tracker.js";
                 const player = new pscore();
                 console.log("working!");
         });
+
+
+
