@@ -25,9 +25,10 @@ import { pscore } from "./tracker.js";
                 console.log("working!");
         });
 
-            const tr = document.getElementById('tr');
-                tr.addEventListener('click', () => {
+            const m = document.getElementById('m');
+                m.addEventListener('click', () => {
                     sc =+ 1;
+                    console.log(sc);
         });
 
 
