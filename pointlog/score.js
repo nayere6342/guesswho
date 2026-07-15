@@ -4,7 +4,7 @@ import { pscore } from "./tracker.js";
                 add.addEventListener('click', () => {
                 const card = document.createElement("p");
                 card.className = "pcard";
-                card.innerHTML = "name";
+                card.innerHTML = ".";
                 document.getElementById("cards").appendChild(card);
                 const bm = document.createElement("button");
                 bm.className = "cba";
