@@ -1,7 +1,9 @@
-class pscore {
-    string name = "";
-    sc = 0;
-    HS = false;
+export class pscore {
+    constructor() {
+        this.name = "";
+        this.sc = 0;
+        this.hs = false;
+    }
 }
 
-// more code...
+
