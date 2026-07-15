@@ -1,3 +1,4 @@
 class pscore {
-    String 
+    String name = "";
+    
 }
