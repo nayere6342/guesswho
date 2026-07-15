@@ -6,6 +6,6 @@ import { pscore } from "./tracker.js";
                 card.className = "pcard";
                 card.innerHTML = "name";
                 document.body.appendChild(card);
-                console.log("working!");
                 const player = new pscore();
+                console.log("working!");
         });
