@@ -1,9 +1,7 @@
-import { pscore } from "./tracker.js";
-
 class pscore {
-    String name = "";
-    int sc = 0;
-    boolean HS = false;
+    string name = "";
+    sc = 0;
+    HS = false;
 }
 
 // more code...
