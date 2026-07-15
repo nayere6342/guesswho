@@ -2,6 +2,10 @@ import { pscore } from "./tracker.js";
 
             const add = document.getElementById('add');
                 add.addEventListener('click', () => {
+                const po = document.createElement("a");
+                po.className = "sc";
+                po.innerHTML = "0";
+                card.appendChild(po);
                 const card = document.createElement("p");
                 card.className = "pcard";
                 card.innerHTML = "";
