@@ -4,5 +4,5 @@ import { pscore } from "./tracker.js";
                 add.addEventListener('click', () => {
                 document.createElement('callcard');
                 console.log("working!");
-                const player = new PScore();
+                const player = new pscore();
         });
