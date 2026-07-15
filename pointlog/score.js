@@ -8,6 +8,7 @@ import { pscore } from "./tracker.js";
                 document.body.appendChild(card);
                 const bm = document.createElement("buttom");
                 bm.className = "cba";
+                bm.innerHTML = "+";
                 document.body.appendChild(bm);
                 const player = new pscore();
                 console.log("working!");
