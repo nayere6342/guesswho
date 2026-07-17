@@ -35,7 +35,7 @@ import { pscore } from "./tracker.js";
                 m.addEventListener('click', () => {
                     sc = 0
                     sc + 1;
-                    document.getElementById("tr").innerHTML = sc;
+                    document.getElementById("cba").innerHTML = sc;
                     console.log(sc);
                     console.log("point added!");
         });
