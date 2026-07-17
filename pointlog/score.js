@@ -27,13 +27,15 @@ import { pscore } from "./tracker.js";
 
             const remove = document.getElementById('remove');
                 remove.addEventListener('click', () => {
-                    document.querySelector(".pscore").remove();
+                    document.querySelector(".pcard").remove();
                     console.log("working!");
         });
 
             const m = document.getElementById('m');
                 m.addEventListener('click', () => {
-                    sc =+ 1;
+                    sc = 0
+                    sc + 1;
+                    document.getElementById("tr").innerHTML = sc;
                     console.log(sc);
                     console.log("point added!");
         });
