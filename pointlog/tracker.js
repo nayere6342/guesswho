@@ -1,7 +1,7 @@
 export class pscore {
     constructor() {
         this.name = "";
-        this.sc = 0;
+        let sc = 0;
         this.hs = false;
     }
 }
