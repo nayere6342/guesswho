@@ -32,14 +32,27 @@ import { pscore } from "./tracker.js";
                     console.log("working!");
         });
 
-            const bm = document.getElementById('bm');
+        //     const m = document.getElementById('bm');
+        //     let sc = 0;
+        //     m.addEventListener('click', () => {
+        //             sc += 1;
+        //             document.getElementById("tr").innerHTML = sc;
+        //             console.log(sc);
+        //             console.log("point added!");
+        // });
+
+        const po = document.createElement("b");
+            po.innerHTML = "0";
+
             let sc = 0;
-                bm.addEventListener('click', () => {
-                    sc += 1;
-                    document.getElementById("tr").innerHTML = sc;
-                    console.log(sc);
-                    console.log("point added!");
-        });
+
+            const bm = document.createElement("button");
+            bm.innerHTML = "+";
+
+            bm.addEventListener("click", () => {
+                sc++;
+                po.innerHTML = sc;
+            });
 
 
 
