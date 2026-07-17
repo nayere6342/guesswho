@@ -20,10 +20,10 @@ import { pscore } from "./tracker.js";
 
                 const m = document.getElementById('m');
                 let sc = 0;
-                m.addEventListener('click', () =>
-                    { sc += 1;
-                        document.getElementById("tr").innerHTML = sc; console.log(sc);
-                         console.log("point added!");
+                m.addEventListener('click', () => {
+                    sc += 1;
+                    document.getElementById("tr").innerHTML = sc; console.log(sc);
+                    console.log("point added!");
                 });
 
                 bm.addEventListener('click', () => {
