@@ -18,6 +18,14 @@ import { pscore } from "./tracker.js";
                 bm.className = "cba";
                 bm.innerHTML = "+";
 
+                const m = document.getElementById('m');
+                let sc = 0;
+                m.addEventListener('click', () =>
+                    { sc += 1;
+                        document.getElementById("tr").innerHTML = sc; console.log(sc);
+                         console.log("point added!");
+                });
+
                 bm.addEventListener('click', () => {
                     sc += 1;
                     po.innerHTML = sc;
