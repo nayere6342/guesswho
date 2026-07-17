@@ -17,7 +17,16 @@ import { pscore } from "./tracker.js";
                 const bm = document.createElement("button");
                 bm.className = "cba";
                 bm.innerHTML = "+";
+
+                bm.addEventListener('click', () => {
+                    sc += 1;
+                    po.innerHTML = sc;
+                    console.log(sc);
+                    console.log("point added!");
+                });
+
                 card.appendChild(bm);
+
                 const bm2 = document.createElement("button");
                 bm2.className = "cbs";
                 bm2.innerHTML = "-";
@@ -31,28 +40,3 @@ import { pscore } from "./tracker.js";
                     document.getElementById("cards").lastElementChild.remove();
                     console.log("working!");
         });
-
-        //     const m = document.getElementById('bm');
-        //     let sc = 0;
-        //     m.addEventListener('click', () => {
-        //             sc += 1;
-        //             document.getElementById("tr").innerHTML = sc;
-        //             console.log(sc);
-        //             console.log("point added!");
-        // });
-
-        const po = document.createElement("b");
-            po.innerHTML = "0";
-
-            let sc = 0;
-
-            const bm = document.createElement("button");
-            bm.innerHTML = "+";
-
-            bm.addEventListener("click", () => {
-                sc++;
-                po.innerHTML = sc;
-            });
-
-
-
