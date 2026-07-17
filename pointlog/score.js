@@ -33,7 +33,6 @@ import { pscore } from "./tracker.js";
 
             const m = document.getElementById('m');
                 m.addEventListener('click', () => {
-                    sc = 0
                     sc + 1;
                     document.getElementById("cba").innerHTML = sc;
                     console.log(sc);
