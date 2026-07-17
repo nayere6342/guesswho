@@ -27,7 +27,7 @@ import { pscore } from "./tracker.js";
 
             const remove = document.getElementById('remove');
                 remove.addEventListener('click', () => {
-                    document.querySelector(".pcard").remove();
+                    document.querySelector(".pscore").remove();
                     console.log("working!");
         });
 
