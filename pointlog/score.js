@@ -27,26 +27,28 @@ const add = document.getElementById('add');
 
 
         document.getElementById("cards").addEventListener("click", (event) => {
-            if (event.target.classList.contains("cba")) {
-                const card = event.target.parentElement;
-                const score = card.querySelector(".pot, .sc");
 
-                sc += 1;
-                score.innerHTML = sc;
-                console.log(sc);
-                console.log("point added!");
-            }
+        const card = event.target.closest(".pcard");
+        if (!card) return;
 
-            if (event.target.classList.contains("cbs")) {
-                const card = event.target.parentElement;
-                const score = card.querySelector(".pot, .sc");
+        const score = card.querySelector(".pot, .sc");
+        let sc = Number(score.innerHTML);
 
-                sc -= 1;
-                score.innerHTML = sc;
-                console.log(sc);
-                console.log("point loss!");
-            }
-        });
+        if (event.target.classList.contains("cba")) {
+            sc += 1;
+            score.innerHTML = sc;
+            console.log(sc);
+            console.log("point added!");
+        }
+
+        if (event.target.classList.contains("cbs")) {
+            sc -= 1;
+            score.innerHTML = sc;
+            console.log(sc);
+            console.log("point loss!");
+        }
+
+    });
 
 
     const remove = document.getElementById('remove');
