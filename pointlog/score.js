@@ -31,10 +31,17 @@ import { pscore } from "./tracker.js";
                 const bm2 = document.createElement("button");
                 bm2.className = "cbs";
                 bm2.innerHTML = "-";
+
+                bm2.addEventListener('click', () => {
+                    if (sc > 0) {
+                        sc -= 1;
+                        po.innerHTML = sc;
+                        console.log(sc);
+                        console.log("point removed!");
+                    }
+                });
+
                 card.appendChild(bm2);
-                const player = new pscore();
-                console.log("working!");
-        });
 
 
             const remove = document.getElementById('remove');
