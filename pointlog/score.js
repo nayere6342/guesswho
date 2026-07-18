@@ -36,6 +36,23 @@ import { pscore } from "./tracker.js";
                 console.log("working!");
         });
 
+                bm.addEventListener('click', () => {
+                    sc += 1;
+                    po.innerHTML = sc;
+                    console.log(sc);
+                    console.log("point added!");
+                });
+
+                card.appendChild(bm);
+
+                const bm2 = document.createElement("button");
+                bm2.className = "cbs";
+                bm2.innerHTML = "-";
+                card.appendChild(bm2);
+                const player = new pscore();
+                console.log("working!");
+        });
+
             const remove = document.getElementById('remove');
                 remove.addEventListener('click', () => {
                     document.getElementById("cards").lastElementChild.remove();
