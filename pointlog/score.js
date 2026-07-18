@@ -35,7 +35,6 @@ const add = document.getElementById('add');
     });
 
     const l = document.getElementById('l');
-        let sc = 0;
         l.addEventListener('click', () => {
         sc -= 1;
         document.getElementById("tr").innerHTML = sc;
