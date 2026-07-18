@@ -25,7 +25,6 @@ const add = document.getElementById('add');
         console.log("working!");
     });
 
-        let sc = 0;
 
         document.getElementById("cards").addEventListener("click", (event) => {
             if (event.target.classList.contains("cba")) {
