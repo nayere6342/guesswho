@@ -25,22 +25,29 @@ const add = document.getElementById('add');
         console.log("working!");
     });
 
-    const m = document.getElementById('m');
         let sc = 0;
-        m.addEventListener('click', () => {
-        sc += 1;
-        document.getElementById("tr").innerHTML = sc;
-        console.log(sc);
-        console.log("point added!");
-    });
 
-    const l = document.getElementById('l');
-        l.addEventListener('click', () => {
-        sc -= 1;
-        document.getElementById("tr").innerHTML = sc;
-        console.log(sc);
-        console.log("point loss!");
-    });
+        document.getElementById("cards").addEventListener("click", (event) => {
+            if (event.target.classList.contains("cba")) {
+                const card = event.target.parentElement;
+                const score = card.querySelector(".pot, .sc");
+
+                sc += 1;
+                score.innerHTML = sc;
+                console.log(sc);
+                console.log("point added!");
+            }
+
+            if (event.target.classList.contains("cbs")) {
+                const card = event.target.parentElement;
+                const score = card.querySelector(".pot, .sc");
+
+                sc -= 1;
+                score.innerHTML = sc;
+                console.log(sc);
+                console.log("point loss!");
+            }
+        });
 
 
     const remove = document.getElementById('remove');
