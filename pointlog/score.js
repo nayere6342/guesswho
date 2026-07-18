@@ -36,14 +36,6 @@ import { pscore } from "./tracker.js";
                 console.log("working!");
         });
 
-                bm2.addEventListener('click', () => {
-                    sc -= 1;
-                    po.innerHTML = sc;
-                    console.log(sc);
-                    console.log("point loss!");
-                });
-
-                card.appendChild(bm2);
 
             const remove = document.getElementById('remove');
                 remove.addEventListener('click', () => {
