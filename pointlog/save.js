@@ -1,11 +1,11 @@
 [
     {
         name: "",
-        score: 12
+        score: 0
     },
     {
         name: "",
-        score: 5
+        score: 0
     }
 ]
 
