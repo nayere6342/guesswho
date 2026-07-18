@@ -33,12 +33,10 @@ import { pscore } from "./tracker.js";
                 bm2.innerHTML = "-";
 
                 bm2.addEventListener('click', () => {
-                    if (sc > 0) {
                         sc -= 1;
                         po.innerHTML = sc;
                         console.log(sc);
-                        console.log("point removed!");
-                    }
+                        console.log("point loss!");
                 });
 
                 card.appendChild(bm2);
