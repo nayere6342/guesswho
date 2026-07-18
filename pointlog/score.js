@@ -13,4 +13,29 @@ const add = document.getElementById('add');
         const tb = document.createElement("input");
         tb.className = "txt";
         card.appendChild(tb);
-        const bm = document.createElement("button"); bm.className = "cba"; bm.innerHTML = "+"; card.appendChild(bm); const bm2 = document.createElement("button"); bm2.className = "cbs"; bm2.innerHTML = "-"; card.appendChild(bm2); const player = new pscore(); console.log("working!"); }); const remove = document.getElementById('remove'); remove.addEventListener('click', () => { document.querySelector(".pcard").remove(); console.log("working!"); }); const m = document.getElementById('m'); let sc = 0; m.addEventListener('click', () => { sc += 1; document.getElementById("tr").innerHTML = sc; console.log(sc); console.log("point added!"); });
+        const bm = document.createElement("button");
+        bm.className = "cba";
+        bm.innerHTML = "+";
+        card.appendChild(bm);
+        const bm2 = document.createElement("button");
+        bm2.className = "cbs";
+        bm2.innerHTML = "-";
+        card.appendChild(bm2);
+        const player = new pscore();
+        console.log("working!");
+    });
+
+    const remove = document.getElementById('remove');
+    remove.addEventListener('click', () => {
+        document.querySelector(".pcard").remove();
+        console.log("working!");
+    });
+
+    const m = document.getElementById('m');
+    let sc = 0;
+        m.addEventListener('click', () => {
+            sc += 1;
+            document.getElementById("tr").innerHTML = sc;
+            console.log(sc);
+            console.log("point added!");
+        });
