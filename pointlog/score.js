@@ -25,17 +25,27 @@ const add = document.getElementById('add');
         console.log("working!");
     });
 
+    const m = document.getElementById('m');
+        let sc = 0;
+        m.addEventListener('click', () => {
+        sc += 1;
+        document.getElementById("tr").innerHTML = sc;
+        console.log(sc);
+        console.log("point added!");
+    });
+
+    const l = document.getElementById('l');
+        let sc = 0;
+        l.addEventListener('click', () => {
+        sc -= 1;
+        document.getElementById("tr").innerHTML = sc;
+        console.log(sc);
+        console.log("point loss!");
+    });
+
+
     const remove = document.getElementById('remove');
     remove.addEventListener('click', () => {
         document.querySelector(".pcard").remove();
         console.log("working!");
     });
-
-    const m = document.getElementById('m');
-    let sc = 0;
-        m.addEventListener('click', () => {
-            sc += 1;
-            document.getElementById("tr").innerHTML = sc;
-            console.log(sc);
-            console.log("point added!");
-        });
