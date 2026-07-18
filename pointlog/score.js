@@ -9,7 +9,6 @@ import { pscore } from "./tracker.js";
                 const po = document.createElement("b");
                 po.className = "sc";
                 po.innerHTML = "0";
-                let sc = 0;
                 card.appendChild(po);
                 const tb = document.createElement("input");
                 tb.className = "txt";
@@ -17,14 +16,6 @@ import { pscore } from "./tracker.js";
                 const bm = document.createElement("button");
                 bm.className = "cba";
                 bm.innerHTML = "+";
-
-                const m = document.getElementById('m');
-                let sc = 0;
-                m.addEventListener('click', () => {
-                    sc += 1;
-                    document.getElementById("tr").innerHTML = sc; console.log(sc);
-                    console.log("point added!");
-                });
 
                 bm.addEventListener('click', () => {
                     sc += 1;
