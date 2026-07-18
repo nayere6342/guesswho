@@ -17,6 +17,7 @@ import { pscore } from "./tracker.js";
                 const bm = document.createElement("button");
                 bm.className = "cba";
                 bm.innerHTML = "+";
+            });
 
 
                 bm.addEventListener('click', () => {
