@@ -28,6 +28,15 @@ import { pscore } from "./tracker.js";
 
                 card.appendChild(bm);
 
+                bm2.addEventListener('click', () => {
+                    sc -= 1;
+                    po.innerHTML = sc;
+                    console.log(sc);
+                    console.log("point loss!");
+                });
+
+                card.appendChild(bm2);
+
                 const bm2 = document.createElement("button");
                 bm2.className = "cbs";
                 bm2.innerHTML = "-";
