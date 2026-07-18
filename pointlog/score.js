@@ -9,6 +9,7 @@ import { pscore } from "./tracker.js";
                 const po = document.createElement("b");
                 po.className = "sc";
                 po.innerHTML = "0";
+                let sc = 0;
                 card.appendChild(po);
                 const tb = document.createElement("input");
                 tb.className = "txt";
@@ -16,6 +17,7 @@ import { pscore } from "./tracker.js";
                 const bm = document.createElement("button");
                 bm.className = "cba";
                 bm.innerHTML = "+";
+
 
                 bm.addEventListener('click', () => {
                     sc += 1;
