@@ -1,6 +1,6 @@
 |title|
 
-|bsp| |gw| |h5|
+ |bsp| |gw| |h5|
 
 This is a simple and open source web game where the goal is to correctly guess who is on the card of the other player.
 
