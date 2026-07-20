@@ -108,7 +108,7 @@
                 font-family: "Lucida Console", "Courier New", monospace;
                 position: absolute;
                 font-weight: bold;
-                top: 580px;
+                top: 180px;
                 left: 300px;
                 color: #f06969;
                 font-size: 80px;
@@ -136,7 +136,7 @@
             <img src="/guesswho/images/forefeit.png" class="if">
         </a>
 
-        <p id="mesg" class="hid">!</p>
+        <p id="mesg" class="hid"></p>
 
 
 
@@ -148,9 +148,9 @@
         <script>
             // JS
 
-            const button = document.getElementById('hintlog');
+            const button = document.getElementById('lock');
                 button.addEventListener('click', () => {
-                document.getElementById("hintlog").innerHTML = "I can be eaten raw, and I go great with mostly all things.";
+                document.getElementById("lock").innerHTML = "Guess Locked!";
                 });
 
             const finish = document.getElementById('ff');
