@@ -134,6 +134,7 @@
                 position: absolute;
                 top: 30%;
                 left: 31%;
+                text-align: center;
             }
 
 
@@ -177,7 +178,9 @@
             const button = document.getElementById('lock');
                 button.addEventListener('click', () => {
                 document.getElementById("lockr").innerHTML = "Guess Locked!";
-                document.querySelector("custom").remove();
+                document.querySelector(".custom").remove();
+                document.querySelector(".text").remove();
+                document.getElementById("name").innerHTML = box;
                 });
 
             const finish = document.getElementById('ff');
