@@ -1,4 +1,6 @@
 import { pscore } from "./tracker.js";
+import { saveCards } from "./save.js";
+import { loadCards } from "./load.js";
 
 const add = document.getElementById('add');
     add.addEventListener('click', () => {

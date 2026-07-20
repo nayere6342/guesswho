@@ -1,4 +1,5 @@
-window.addEventListener("load", () => {
+export function loadCards(createCard) {
+
     const data = JSON.parse(sessionStorage.getItem("scoreboard"));
 
     if (!data) return;
@@ -6,6 +7,9 @@ window.addEventListener("load", () => {
     document.getElementById("cards").innerHTML = "";
 
     data.forEach(player => {
+
         createCard(player.name, player.score);
+
     });
-});
+
+}
