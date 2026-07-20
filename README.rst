@@ -40,7 +40,7 @@ If you see this, Congrets! You're in the right place. All that is needed to chan
 
 Now if you also changed the file name just keep the ending the same so if it's `p1.html` it can be `john.html`
 
-When adding an image it is important to keep the file path the same. To do so, drag and drop an image you want into the images folder. After link the image name to the file so if it's `johndoe.jpg` in the file path it would be: `src="/guesswho/images/johndoe.jpg"`. Important detail: The image will not load if it is in the wrong format. If you added the image as `johndoe.png` and linked it with `johndoe.jpg` it will not load. I update this repo a ton, so 
+When adding an image it is important to keep the file path the same. To do so, drag and drop an image you want into the images folder. After link the image name to the file so if it's `johndoe.jpg` in the file path it would be: `src="/guesswho/images/johndoe.jpg"`. Important detail: The image will not load if it is in the wrong format. If you added the image as `johndoe.png` and linked it with `johndoe.jpg` it will not load. I update this repo a ton, so to stay up to date with this project just press the "Watch" button to get notified!
 
 
 .. |gw| image:: https://nayere6342.github.io//guesswho/images/subimages/gw_true.png
