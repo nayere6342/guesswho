@@ -62,4 +62,4 @@ function createCard(name = "", score = 0) {
         console.log("working!");
     });
 
-    loadCards(createCard);
+createCard();
