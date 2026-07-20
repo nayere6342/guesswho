@@ -180,7 +180,8 @@
                 document.getElementById("lockr").innerHTML = "Guess Locked!";
                 document.querySelector(".custom").remove();
                 document.querySelector(".text").remove();
-                document.getElementById(".newtxt").innerHTML = box;
+                const box = document.getElementById("box").value;
+                document.getElementById("newtxt").innerHTML = box;
                 });
 
             const finish = document.getElementById('ff');
