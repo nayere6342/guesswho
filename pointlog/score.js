@@ -58,3 +58,5 @@ const add = document.getElementById('add');
         document.querySelector(".pcard").remove();
         console.log("working!");
     });
+
+    loadCards(createCard);
