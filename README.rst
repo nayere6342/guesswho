@@ -1,6 +1,6 @@
 |title|
 
- |gfi| |bsp| |gw| |h5|  
+|bsp| |gw| |h5|
 
 This is a simple and open source web game where the goal is to correctly guess who is on the card of the other player.
 
@@ -17,7 +17,7 @@ Make a fork of the repo. This allows you to make a copy of the project. By doing
 🔧 How To Customize The Game:
 ---------------------
 
-Great! Now yuo're able to change this project how you want. If you would like to add a new category. First thing to do is to copy the category template folder by using the command below:
+Great! Now you're able to change this project how you want. If you would like to add a new category. First thing to do is to copy the category template folder by using the command below:
 
 .. code-block:: bash
 
@@ -55,10 +55,10 @@ When adding an image it is important to keep the file path the same. To do so, d
    :height: 40px
    :target: #
 
-.. |gfi| image:: https://nayere6342.github.io//guesswho/images/subimages/gfi.png
-   :width: 250px
-   :height: 35px
-   :target: #
+.. .. |gfi| image:: https://nayere6342.github.io//guesswho/images/subimages/gfi.png
+..    :width: 250px
+..    :height: 35px
+..    :target: #
 
 .. |h5| image:: https://nayere6342.github.io//guesswho/images/subimages/html_v.png
    :width: 200px
