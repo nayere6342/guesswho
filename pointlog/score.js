@@ -55,11 +55,17 @@ import { loadCards } from "./load.js";
 
     });
 
-    const remove = document.getElementById("remove");
-    remove.addEventListener("click", () => {
-        document.querySelector(".pcard").remove();
-        saveCards();
-        console.log("working!");
+    const remove = document.getElementById('remove');
+    remove.addEventListener('click', () => {
+
+        const cards = document.getElementById("cards");
+
+        if (cards.lastElementChild) {
+            cards.lastElementChild.remove();
+            saveCards();
+            console.log("working!");
+        }
+
     });
 
     loadCards(createCard);
