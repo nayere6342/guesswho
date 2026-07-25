@@ -2,6 +2,9 @@ import { pscore } from "./tracker.js";
 import { saveCards } from "./save.js";
 import { loadCards } from "./load.js";
 
+// Hello to whoever is reading and want to edit. DON'T DO IT
+// This code is 
+
     function createCard(name = "", score = 0) {
         const card = document.createElement("p");
         card.className = "pcard";
@@ -38,29 +41,26 @@ import { loadCards } from "./load.js";
         if (!card) return;
         const score = card.querySelector(".pot, .sc");
         let sc = Number(score.innerHTML);
-        if (event.target.classList.contains("cba")) {
+    if (event.target.classList.contains("cba")) {
             sc += 1;
             score.innerHTML = sc;
             saveCards();
             console.log(sc);
             console.log("point added!");
         }
-        if (event.target.classList.contains("cbs")) {
+    if (event.target.classList.contains("cbs")) {
             sc -= 1;
             score.innerHTML = sc;
             saveCards();
             console.log(sc);
             console.log("point loss!");
         }
-
     });
 
     const remove = document.getElementById('remove');
     remove.addEventListener('click', () => {
-
         const cards = document.getElementById("cards");
-
-        if (cards.lastElementChild) {
+    if (cards.lastElementChild) {
             cards.lastElementChild.remove();
             saveCards();
             console.log("working!");
