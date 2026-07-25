@@ -2,8 +2,10 @@ import { pscore } from "./tracker.js";
 import { saveCards } from "./save.js";
 import { loadCards } from "./load.js";
 
-// Hello to whoever is reading and want to edit. DON'T DO IT
-// This code is 
+// Friendly Wr
+// Hello to whoever is reading this and want to edit. DON'T DO IT
+// This code is held up by CHEWED GUM AND DEAD HOPES AND DREAMS
+// IF YOU PRY TO EVER GOD ON THE FACE OF THE EARTH
 
     function createCard(name = "", score = 0) {
         const card = document.createElement("p");
