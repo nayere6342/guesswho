@@ -51,7 +51,7 @@
                 font-family: "Lucida Console", "Courier New", monospace;
                 color: #595959ff;
                 position: absolute;
-                top: 900px;
+                top: 600px;
                 left: 350px;
                 font-size: 50px;
                 font-weight: bold;
@@ -61,7 +61,7 @@
                 font-family: "Lucida Console", "Courier New", monospace;
                 color: #595959ff;
                 position: absolute;
-                top: 980px;
+                top: 680px;
                 left: 350px;
                 font-size: 20px;
                 max-width: 70%;
@@ -70,14 +70,6 @@
             }
 
 
-            .space {
-                font-family: "Lucida Console", "Courier New", monospace;
-                color: #ffffff;
-                position: absolute;
-                top: 1200px;
-                left: 350px;
-                font-size: 10px;
-            }
 
             .ik {
                 width: 180px;
@@ -91,56 +83,28 @@
                 cursor: pointer;
             }
 
-            .iz {
-                width: 180px;
-                height: 180px;
+            .ii {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 280px;
+                left: 120px;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                position: absolute;
-                top: 880px;
-                left: 140px;
+                border-radius: 40px;
             }
 
-            .iu {
-                width: 180px;
-                height: 180px;
+            .ih {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 580px;
+                left: 120px;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                position: absolute;
-                top: 280px;
-                left: 140px;
-                cursor: pointer;
-            }
-
-            .hid {
-                font-family: "Lucida Console", "Courier New", monospace;
-                position: absolute;
-                font-weight: bold;
-                top: 280px;
-                left: 0px;
-                background-color: #f06969;
-                color: #ffffff;
-                font-size: 50px;
-                padding: 10px;
-            }
-
-            .back {
-                text-decoration-line: none;
-                font-weight: bold;
-                color: #97a6e8;
-                font-size: 30px;
-                padding: 5px;
-                cursor: pointer;
-                position: absolute;
-                top: 700px;
-                left: 622px;
-            }
-
-            .back:hover {
-                color: #ffffff;
-                background-color: #97a6e8;
+                border-radius: 40px;
             }
 
 
@@ -149,23 +113,29 @@
 
         </style>
 
-        <title>Guess Who</title>
+        <title>Info Page</title>
     </head>
     <body>
         <!-- HTML -->
 
-        <p class="title">Settings</p>
+        <p class="title">How To Play</p>
 
-        <button id="click" class="input">Phone UI</button>
-
-        <a id="click" class="input" href="/guesswho/setlog/classicMode/main.html">Classic Mode</a>
-
-        <button id="click" class="input">No Hints</button>
-
-        <a href="/guesswho/index.html" class="back">Back to Menu</a>
+        <a href="/guesswho/setlog/classicMode/infolog/info.html">
+            <img src="/guesswho/images/special/info.png" class="ik">
+        </a>
 
 
+        <p class="alphasim1">Identifier</p>
 
+        <img src="/guesswho/images/special/placeholder.png" class="ii">
+
+            <p class="sim1">Once a player has put in a identifier, without showing to the other player ask questions of what their identifier might be.</p>
+
+        <p class="alphasim2">Points</p>
+
+        <img src="/guesswho/images/special/crown.png" class="ih">
+
+            <p class="sim2">Add or remove scoreboards based on how many players their are. Everytime a player wins 5 points get added to their score.</p>
 
 
 

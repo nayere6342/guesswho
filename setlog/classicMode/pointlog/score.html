@@ -114,17 +114,6 @@
                 cursor: pointer;
             }
 
-            .hid {
-                font-family: "Lucida Console", "Courier New", monospace;
-                position: absolute;
-                font-weight: bold;
-                top: 280px;
-                left: 0px;
-                background-color: #f06969;
-                color: #ffffff;
-                font-size: 50px;
-                padding: 10px;
-            }
 
             .back {
                 text-decoration-line: none;
@@ -134,8 +123,8 @@
                 padding: 5px;
                 cursor: pointer;
                 position: absolute;
-                top: 700px;
-                left: 622px;
+                top: 200px;
+                left: 1200px;
             }
 
             .back:hover {
@@ -143,24 +132,126 @@
                 background-color: #97a6e8;
             }
 
+            .pcard {
+                padding: 50px;
+                width: 200px;
+                margin: 80px auto;
+                border-radius: 10px 30px;
+                background-color: #f2c444ff;
+                text-align: center;
+            }
+
+            #cards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cba {
+                text-decoration-line: none;
+                border: none;
+                color: #97a6e8;
+                font-size: 20px;
+                width: 50px;
+            }
+
+            .cba:hover {
+                font-weight: bold;
+                color: #FFFFFF;
+                background-color: #97a6e8;
+                font-size: 20px;
+            }
+
+            .cbs {
+                text-decoration-line: none;
+                border: none;
+                color: #97a6e8;
+                font-size: 20px;
+                width: 50px;
+            }
+
+            .cbs:hover {
+                font-weight: bold;
+                color: #FFFFFF;
+                background-color: #97a6e8;
+                font-size: 20px;
+            }
+
+            .am {
+                padding: 30px;
+                border: 20px;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .am:hover {
+                font-weight: bold;
+                background-color: #5fe382ff;
+            }
+
+            .rm {
+                padding: 30px;
+                border: 20px;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .rm:hover {
+                font-weight: bold;
+                background-color: #f06969ff;
+            }
+
+            .txt {
+                padding: 10px;
+                width: 100px;
+                box-sizing: border-box;
+                overflow-wrap: break-word;
+                text-align: center;
+                font-family: "Lucida Console", "Courier New", monospace;
+            }
+
+            .txt:hover {
+               font-style: italic;
+            }
+
+            .sc {
+                color: #e84dacff;
+                text-align: center;
+                font-size: 30px;
+            }
+
+
 
 
 
 
         </style>
 
-        <title>Guess Who</title>
+        <title>Scoring Page</title>
     </head>
     <body>
         <!-- HTML -->
 
-        <p class="title">Settings</p>
+        <p class="title">Scoreboard</p>
 
-        <button id="click" class="input">Phone UI</button>
+        <!-- <p id="mesg" class="hid">Hmm it seems like this page is still being worked on... Maybe come back later?</p> -->
 
-        <a id="click" class="input" href="/guesswho/setlog/classicMode/main.html">Classic Mode</a>
+        <button id="add" class="am">Add New Player</button>
 
-        <button id="click" class="input">No Hints</button>
+        <button id="remove" class="rm">Remove New Player</button>
+
+        <div id="cards">
+            <p id="callcard" class="pcard">
+                <b id="tr" class="sc">0</b>
+                <input type="text" class="txt"></input>
+                <button id="m" class="cba">+</button>
+                <button id="l" class="cbs">-</button>
+            </p>
+        </div>
+
+
+
+
 
         <a href="/guesswho/index.html" class="back">Back to Menu</a>
 
@@ -172,12 +263,6 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- <script src="script.js"></script> -->
-        <script>
-            // JS
-
-
-
-        </script>
+        <script type="module" src="score.js"></script>
     </body>
 </html>

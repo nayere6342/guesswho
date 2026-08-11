@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -40,22 +39,11 @@
             .name {
                 padding: 35px;
                 font-family: "Lucida Console", "Courier New", monospace;
+                font-size: 90px;
+                font-weight: bold;
                 text-align: center;
-                font-size: 40px;
-                font-weight: bold;
-            }
-
-            .help {
-                text-decoration-line: none;
-                margin: 20px;
-                padding: 10px;
-                font-weight: bold;
-                color: #97a6e8;
-            }
-
-            .help:hover {
-                color: #ffffff;
-                background-color: #97a6e8;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
             }
 
             .back {
@@ -67,7 +55,7 @@
                 cursor: pointer;
                 position: absolute;
                 top: 700px;
-                left: 622px;
+                left: 625px;
             }
 
             .back:hover {
@@ -75,17 +63,20 @@
                 background-color: #97a6e8;
             }
 
-            .hint {
+            .custom {
                 color: #97a6e8;
-                font-size: 30px;
+                font-size: 60px;
                 padding: 5px;
                 border: none;
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffffff;
+                position: absolute;
+                top: 500px;
+                left: 565px;
             }
 
-            .hint:hover {
+            .custom:hover {
                 color: #ffffff;
                 background-color: #97a6e8;
             }
@@ -117,41 +108,64 @@
                 font-family: "Lucida Console", "Courier New", monospace;
                 position: absolute;
                 font-weight: bold;
-                top: 580px;
+                top: 300px;
                 left: 300px;
                 color: #f06969;
                 font-size: 80px;
             }
 
+            .l {
+                color: #ffffff;
+                font-size: 60px;
+                padding: 5px;
+                border: none;
+                font-weight: bold;
+                background-color: #f06969ff;
+                position: absolute;
+                top: 500px;
+                left: 525px;
+
+            }
+
+            .text {
+                padding: 35px;
+                font-family: "Lucida Console", "Courier New", monospace;
+                font-size: 40px;
+                font-weight: bold;
+                position: absolute;
+                top: 30%;
+                left: 31%;
+                text-align: center;
+            }
+
+
         </style>
 
         <title>Guess Who</title>
     </head>
-
     <body>
         <!-- HTML -->
 
-        <h1 class="cat">Category: Controversial Figures</h1>
+        <h1 class="cat">Category: Classic</h1>
 
-        <img src="/guesswho/images/jdr.jpg" class="i">
+        <h2 class="name" id="newtxt">Input Name:</h2>
 
-        <h2 class="name">John D. Rockefeller</h2>
-
-        <center><button type="button" id="hintlog" class="hint">
-            Hint
-        </button></center>
+        <button type="button" id="lock" class="custom">
+            Lock Guess
+        </button>
 
         <a href="/guesswho/index.html" class="back">Back to Menu</a>
 
-        <a href="../../randomlogic/random_c3.html">
+
+        <a href="p.html">
             <img src="/guesswho/images/redo.png" class="ik">
         </a>
 
-        <a type="finish" id="ff">
-            <img src="/guesswho/images/forefeit.png" class="if">
-        </a>
+        <input id="box" class="text"></input>
 
-        <p id="mesg" class="hid"></p>
+        <p id="lockr" class="l"></p>
+
+
 
 
 
@@ -161,24 +175,22 @@
         <script>
             // JS
 
-            const button = document.getElementById('hintlog');
+            const button = document.getElementById('lock');
                 button.addEventListener('click', () => {
-                document.getElementById("hintlog").innerHTML = "This person is known for their large company value and brought an army to open fire on people who went on strike over their company.";
+                const box = document.getElementById("box").value;
+                document.getElementById("newtxt").innerHTML = box;
+                if (box != "") {
+                    document.getElementById("lockr").innerHTML = "Guess Locked!";
+                    document.querySelector(".custom").remove();
+                    document.querySelector(".text").remove();
+                }
+                if (box == "") {
+                    document.getElementById("newtxt").innerHTML = "Put Something Into The Box!";
+                }
                 });
-
-                            const finish = document.getElementById('ff');
-                finish.addEventListener('click', () => {
-                document.getElementById("hintlog").innerHTML = "";
-                document.getElementById("mesg").innerHTML = "You Have Forefeit!";
-                document.querySelector(".ik").remove();
-                document.querySelector(".if").remove();
-                });
-
-
 
 
 
         </script>
     </body>
-
 </html>
