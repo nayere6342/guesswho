@@ -64,7 +64,7 @@ When adding an image it is important to keep the file path the same. To do so, d
    :target: #
 
 .. |title| image:: https://nayere6342.github.io//guesswho/images/subimages/titlegear.png
-    :target: https://nayere6342.github.io/guesswho/
+    :target: https://nayere6342.github.io/guesswho/index.html
     :width: 450px
     :height: 400px
 
